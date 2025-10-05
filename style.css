@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root{
+  --pink:#ff66b2;
+  --blue:#3399ff;
+  --light:#f2f9ff;
+  --purple:#a84bd7;
+  --green:#4CAF50;
+  --red:#f44336;
+}
+*{box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;margin:0;background:linear-gradient(180deg,#fff 0%,#f8fbff 100%);color:#222;}
+.header{background:linear-gradient(135deg,#ffd6ec 0%,#d6f0ff 100%);padding:36px 16px 24px;text-align:center;border-bottom:4px solid rgba(0,0,0,0.03);}
+.title{font-size:2.2rem;color:var(--pink);margin:0;font-weight:700}
+.subtitle{color:#333;margin-top:6px;font-size:1.05rem}
+.container{max-width:980px;margin:18px auto;padding:16px;}
+.card{background:white;border-radius:14px;padding:16px;margin-bottom:16px;box-shadow:0 8px 30px rgba(0,0,0,0.06);}
+.cover{display:flex;gap:12px;align-items:center;justify-content:center;flex-direction:column;padding:28px 12px;}
+.start-btn{background:var(--pink);color:white;border:none;padding:12px 26px;border-radius:12px;font-size:1.05rem;cursor:pointer;box-shadow:0 8px 18px rgba(255,102,178,0.18)}
+.story{background:linear-gradient(90deg,#fff,#f7fcff);border-radius:12px;padding:14px;display:none}
+.vocab{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.vocab table{width:100%;border-collapse:collapse}
+.vocab th{background:#ffecf8;padding:8px}
+.vocab td{background:#fff;padding:8px;border:1px solid #eee;text-align:center}
+.exercises{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+.question{margin:8px 0;padding:10px;border:2px solid transparent;border-radius:10px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+.question.correct{border-color:var(--green)}
+.question.incorrect{border-color:var(--red)}
+.img-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.small-img{width:64px;height:64px;object-fit:contain;border-radius:8px;background:#fff;padding:8px;border:1px solid #f0f0f0}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.check-btn{background:var(--blue);color:white;border:none;padding:8px 14px;border-radius:10px;cursor:pointer}
+@media(max-width:800px){.vocab{grid-template-columns:1fr} .small-img{width:48px;height:48px} .title{font-size:1.6rem}}
