@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>My Five Senses Game</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="title">My Five Senses Game</div>
+    <div class="subtitle">Let's learn and play!</div>
+  </header>
+
+  <main class="container">
+    <section id="cover" class="card cover">
+      <img src="img/icecream.png" alt="ice cream" class="small-img" />
+      <h2 style="margin:6px 0">🌈 Ready?</h2>
+      <p style="margin:0 0 12px 0;color:#444">Press Start to open the story and exercises.</p>
+      <button id="startBtn" class="start-btn">Start</button>
+    </section>
+
+    <section id="main" style="display:none;">
+      <article class="card story" id="story">
+        <h2>🐱 Story: Five Senses</h2>
+        <p><strong>Hello! I’m Marie.</strong><br/>I have five friends — my five senses!</p>
+        <p>👅 <strong>This is my mouth.</strong> I can taste ice cream. Mmm! It’s sweet and cold.</p>
+        <p>👀 <strong>These are my eyes.</strong> I can see a rainbow. It’s beautiful!</p>
+        <p>👂 <strong>These are my ears.</strong> I can hear a bird. It’s singing! Tweet, tweet!</p>
+        <p>👃 <strong>This is my nose.</strong> I can smell an onion. Oh no! It’s bad!</p>
+        <p>✋ <strong>These are my hands.</strong> I can touch my cat. It’s soft and nice.</p>
+        <p><strong>I can taste, see, hear, smell, and touch.</strong><br/>Five senses — every day!</p>
+      </article>
+
+      <article class="card vocab">
+        <h2>💬 Vocabulary</h2>
+        <div class="img-row" style="margin-bottom:8px;">
+          <img src="img/icecream.png" class="small-img"><img src="img/rainbow.png" class="small-img"><img src="img/cat.png" class="small-img"><img src="img/bird.png" class="small-img"><img src="img/onion.png" class="small-img"><img src="img/girl.png" class="small-img"><img src="img/hand.png" class="small-img">
+        </div>
+        <table>
+          <tr><th>English</th><th>Russian</th></tr>
+          <tr><td>mouth</td><td>рот</td></tr>
+          <tr><td>eyes</td><td>глаза</td></tr>
+          <tr><td>ears</td><td>уши</td></tr>
+          <tr><td>nose</td><td>нос</td></tr>
+          <tr><td>hands</td><td>руки</td></tr>
+          <tr><td>taste</td><td>пробовать</td></tr>
+          <tr><td>see</td><td>видеть</td></tr>
+          <tr><td>hear</td><td>слышать</td></tr>
+          <tr><td>smell</td><td>нюхать</td></tr>
+          <tr><td>touch</td><td>трогать</td></tr>
+        </table>
+      </article>
+
+      <article class="card exercises">
+        <h2>✏️ Exercise 1 – True or False</h2>
+        <div id="ex1">
+          <div class="question" data-correct="f">1. Marie can taste a rainbow.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="question" data-correct="t">2. She can see a rainbow.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="question" data-correct="t">3. She can hear a bird.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="question" data-correct="t">4. She can smell an onion.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="question" data-correct="t">5. She can touch her cat.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="question" data-correct="f">6. Ice cream is hot and salty.
+            <select><option value=""></option><option value="t">T</option><option value="f">F</option></select>
+          </div>
+          <div class="controls"><button class="check-btn" onclick="checkAnswers('ex1')">Check Answers</button></div>
+        </div>
+
+        <h2>🧩 Exercise 2 – Match</h2>
+        <div id="ex2">
+          <div class="question" data-correct="d">1. Mouth ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <div class="question" data-correct="e">2. Eyes ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <div class="question" data-correct="b">3. Ears ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <div class="question" data-correct="c">4. Nose ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <div class="question" data-correct="a">5. Hands ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <div class="question" data-correct="f">6. Cat ⟶ <input maxlength="1" placeholder="a-f"></div>
+          <p><strong>Options:</strong> a) touch  b) hear  c) smell  d) taste  e) see  f) soft</p>
+          <div class="controls"><button class="check-btn" onclick="checkAnswers('ex2')">Check Answers</button></div>
+        </div>
+
+        <h2>✍️ Exercise 3 – Fill in the blanks</h2>
+        <div id="ex3">
+          <div class="question" data-correct="taste">1. I can <input> ice cream.</div>
+          <div class="question" data-correct="see">2. I can <input> a rainbow.</div>
+          <div class="question" data-correct="hear">3. I can <input> a bird.</div>
+          <div class="question" data-correct="smell">4. I can <input> an onion.</div>
+          <div class="question" data-correct="touch">5. I can <input> my cat.</div>
+          <div class="question" data-correct="touch">6. I can <input> with my hands.</div>
+          <div class="controls"><button class="check-btn" onclick="checkAnswers('ex3')">Check Answers</button></div>
+        </div>
+
+        <h2>🎨 Exercise 4 – Draw and say</h2>
+        <p>Draw on paper and complete the sentences:</p>
+        <ol>
+          <li>I can see a __________.</li>
+          <li>I can taste a __________.</li>
+          <li>I can hear a __________.</li>
+          <li>I can smell a __________.</li>
+          <li>I can touch a __________.</li>
+          <li>I can see my __________.</li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
